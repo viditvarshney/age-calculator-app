@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>Age calculator app</title>
+  </head>
+  <body>
+    <!-- Day DD Month MM Year YYYY -- years -- months -- days -->
+    <main class="container">
+      <section class="top">
+        <form>
+          <div class="day">
+            <label class="label-name">DAY</label>
+            <input
+              type="number"
+              min="1"
+              max="31"
+              name="day"
+              id="day"
+              placeholder="DD"
+              required
+            />
+            <span class="day-error"></span>
+          </div>
+          <div class="month">
+            <label class="label-name">MONTH</label>
+            <input
+              type="number"
+              min="1"
+              max="12"
+              placeholder="MM"
+              class="month"
+              required
+            />
+          </div>
+          <div class="year">
+            <label class="label-name">YEAR</label>
+            <input
+              type="number"
+              min="1913"
+              placeholder="YYYY"
+              class="year"
+              required
+            />
+          </div>
+        </form>
+      </section>
+      <section class="middle">
+        <hr class="hr" />
+        <button type="submit" class="submit-btn">
+          <img src="./assets/images/icon-arrow.svg" alt="icon" />
+        </button>
+      </section>
+
+      <section class="bottom">
+        <h1 class="output"><span class="output-year result">--</span> years</h1>
+        <h1 class="output">
+          <span class="output-month result">--</span> months
+        </h1>
+        <h1 class="output"><span class="output-day result">--</span> days</h1>
+      </section>
+    </main>
+  </body>
+</html>
